@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Workout Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      .container {
+        margin: 20px;
+      }
+
+      select,
+      button {
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+
+      .workout {
+        margin-top: 30px;
+        font-size: 18px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random Workout Generator</h1>
+      <p>Select your workout type and get a randomized workout!</p>
+
+      <select id="workoutDays">
+        <option value="3">3-day workout</option>
+        <option value="4">4-day workout</option>
+        <option value="5">5-day workout</option>
+        <option value="6">6-day workout</option>
+      </select>
+      <br />
+      <button onclick="generatePlan()">Generate Weekly Plan</button>
+
+      <div id="planResult" class="workout"></div>
+      <hr />
+
+      <p>Or, select a specific workout type to generate a daily workout:</p>
+      <select id="workoutType">
+        <option value="push">Push</option>
+        <option value="pull">Pull</option>
+        <option value="legs">Legs</option>
+        <option value="core">Core</option>
+        <option value="cardio">Cardio</option>
+      </select>
+      <br />
+      <button onclick="generateWorkout()">Generate Workout</button>
+
+      <div id="workoutResult" class="workout"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
