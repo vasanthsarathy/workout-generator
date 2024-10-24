@@ -39,20 +39,6 @@
     <div class="container">
       <h1>Random Workout Generator</h1>
       <p>Select your workout type and get a randomized workout!</p>
-
-      <select id="workoutDays">
-        <option value="3">3-day workout</option>
-        <option value="4">4-day workout</option>
-        <option value="5">5-day workout</option>
-        <option value="6">6-day workout</option>
-      </select>
-      <br />
-      <button onclick="generatePlan()">Generate Weekly Plan</button>
-
-      <div id="planResult" class="workout"></div>
-      <hr />
-
-      <p>Or, select a specific workout type to generate a daily workout:</p>
       <select id="workoutType">
         <option value="push">Push</option>
         <option value="pull">Pull</option>
@@ -64,6 +50,20 @@
       <button onclick="generateWorkout()">Generate Workout</button>
 
       <div id="workoutResult" class="workout"></div>
+      <hr />
+
+      <p>Select your workout days and get a plan</p>
+
+      <select id="workoutDays">
+        <option value="3">3-day workout</option>
+        <option value="4">4-day workout</option>
+        <option value="5">5-day workout</option>
+        <option value="6">6-day workout</option>
+      </select>
+      <br />
+      <button onclick="generatePlan()">Generate Weekly Plan</button>
+
+      <div id="planResult" class="workout"></div>
     </div>
 
     <script src="script.js"></script>
